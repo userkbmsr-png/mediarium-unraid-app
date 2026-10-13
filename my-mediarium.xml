@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>mediarium</Name>
+  <Repository>ghcr.io/rdborg/mediarium:latest</Repository>
+  <Registry/>
+  <Network>bridge</Network>
+  <MyIP/>
+  <MyMAC/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <ReadMe/>
+  <Overview/>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:8264]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/rdborg/Mediarium/main/branding/mediarium-icon-512.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1791914565</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI" Target="8264" Default="8264" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8264</Config>
+  <Config Name="config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/mediarium</Config>
+  <Config Name="data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/data</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">100</Config>
+  <Config Name="Timezone" Target="TZ" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">Europe/Bucharest</Config>
+  <Config Name="Downloads folder" Target="DOWNLOADS_DIR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/data/downloads/mediarium</Config>
+  <Config Name="Movies folder" Target="MOVIES_DIR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/data/media/movies</Config>
+  <Config Name="TV folder" Target="TV_DIR" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">/data/media/tv</Config>
+  <TailscaleStateDir/>
+</Container>
